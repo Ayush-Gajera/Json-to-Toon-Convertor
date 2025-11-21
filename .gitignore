@@ -1,0 +1,53 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+pnpm-error.log*
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Editor settings
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+vite.config.ts.timestamp-*
+
+# TypeScript
+*.tsbuildinfo
+
+# Optional: if you use ESLint or Prettier caches
+.eslintcache
+.prettier-cache
+
+# Mac Finder files
+.AppleDouble
+.LSOverride
+
+# Images generated locally
+/public/og-image.png
+/public/favicon.ico
+/public/favicon.png
+
+# Lockfiles (if you use one specific tool, remove others)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
