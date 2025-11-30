@@ -9,6 +9,7 @@ import { Copy, FileText, Download, Trash2 } from 'lucide-react'
 import { Button, Card } from './ui'
 import { ToastProvider, useToasts } from './ToastProvider'
 import ExampleModal from './ExampleModal'
+import AboutSection from './AboutSection'
 
 function useLocalStorage(key: string, initial = '') {
   const [state, setState] = useState<string>(() => localStorage.getItem(key) || initial)
@@ -153,6 +154,10 @@ function PanelInner() {
       </div>
 
       <TokenStats inputTokens={inputTokens} outputTokens={outputTokens} />
+
+      {/* Informational section explaining JSON vs TOON, placed below the token counters */}
+      <AboutSection />
+
       <ExampleModal open={examplesOpen} onClose={()=>setExamplesOpen(false)} onInsert={(text, mode)=>{
         if (mode === 'json') setJsonInput(text)
         else setToonInput(text)
